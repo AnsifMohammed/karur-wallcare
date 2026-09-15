@@ -371,7 +371,16 @@
 @media (max-width: 960px) {
   .hero-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.25rem;
+  }
+  .hero-visual {
+    order: -1;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .hero-content {
+    order: 2;
   }
   .stats-container-fluid {
     grid-template-columns: repeat(2, 1fr);
