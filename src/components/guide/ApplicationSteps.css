@@ -1,0 +1,157 @@
+.guide-section {
+  padding: 5.5rem 0;
+  background: var(--bg-subtle);
+  position: relative;
+}
+
+.steps-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 3.5rem;
+}
+
+.step-card {
+  position: relative;
+  background: #ffffff;
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 1.6rem;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform var(--transition-base);
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  border: none;
+  box-shadow: none;
+}
+
+.step-number-watermark {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: rgba(30, 64, 175, 0.06);
+  line-height: 1;
+  user-select: none;
+}
+
+.step-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.step-icon-frame {
+  width: 50px;
+  height: 50px;
+  background: var(--blue-light);
+  border: none;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  background: var(--blue-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: none;
+}
+
+.step-card-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.step-card-desc {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.step-pro-tip {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  background: var(--bg-ice);
+  border-left: 3px solid var(--primary-blue);
+  padding: 0.65rem 0.75rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.tip-icon {
+  color: var(--primary-blue);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Curing Note Box */
+.curing-note-box {
+  background: #ffffff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 1.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: none;
+}
+
+.curing-note-left h4 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.curing-note-left p {
+  font-size: 0.96rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.curing-badge-pill {
+  background: #dcfce7;
+  color: #15803d;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .steps-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .steps-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .curing-note-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,374 @@
+.calc-section {
+  padding: 5.5rem 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.calc-card-wrapper {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  background: #ffffff;
+  border: 1.5px solid var(--blue-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
+}
+
+.calc-inputs-pane {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.calc-pane-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.calc-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.calc-field-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.field-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field-value-badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  background: var(--blue-light);
+  padding: 0.15rem 0.65rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--blue-border);
+}
+
+.unit-switch {
+  display: flex;
+  background: var(--bg-subtle);
+  padding: 0.2rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+}
+
+.unit-btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.unit-btn.active {
+  background: var(--primary-blue);
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(30, 64, 175, 0.2);
+}
+
+.input-number-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.calc-input {
+  width: 100%;
+  padding: 0.85rem 3.5rem 0.85rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  transition: border-color var(--transition-fast);
+}
+
+.calc-input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.15);
+}
+
+.input-unit-label {
+  position: absolute;
+  right: 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* Choice Pills */
+.choice-pill-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.choice-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.85rem 1rem;
+  background: var(--bg-subtle);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition: all var(--transition-fast);
+}
+
+.choice-pill span:first-child {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.choice-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.choice-pill:hover {
+  border-color: var(--primary-blue);
+  background: #ffffff;
+}
+
+.choice-pill.choice-selected {
+  border-color: var(--primary-blue);
+  background: var(--blue-light);
+  box-shadow: 0 0 0 1px var(--primary-blue);
+}
+
+.choice-pill.choice-selected span:first-child {
+  color: var(--primary-blue);
+}
+
+/* Range Slider */
+.calc-range-slider {
+  width: 100%;
+  accent-color: var(--primary-blue);
+  cursor: pointer;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Wastage Buttons */
+.wastage-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.wastage-btn {
+  flex: 1;
+  padding: 0.55rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  background: var(--bg-subtle);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.wastage-btn.active {
+  background: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+}
+
+.btn-reset-calc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  width: fit-content;
+  margin-top: 0.5rem;
+  transition: color var(--transition-fast);
+}
+
+.btn-reset-calc:hover {
+  color: var(--primary-blue);
+}
+
+/* Results Pane */
+.calc-results-pane {
+  background: linear-gradient(135deg, #1e40af 0%, #172554 100%);
+  padding: 2.75rem 2.5rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.results-inner-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.results-header {
+  margin-bottom: 1.5rem;
+}
+
+.results-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #93c5fd;
+}
+
+.results-product-rec {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 0.25rem;
+}
+
+.big-bag-display {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.bag-icon-frame {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bag-number-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-number {
+  font-family: var(--font-heading);
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.big-number-unit {
+  font-size: 0.9rem;
+  color: #dbeafe;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.metrics-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-lbl {
+  font-size: 0.72rem;
+  color: #bfdbfe;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.metric-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 0.2rem;
+}
+
+.calc-guarantee-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.84rem;
+  color: #eff6ff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.85rem;
+  margin-bottom: 1.75rem;
+  line-height: 1.5;
+}
+
+.calc-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn-whatsapp-order {
+  background: #25d366;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp-order:hover {
+  background: #22bf5b;
+}
+
+.btn-secondary-white {
+  background: #ffffff;
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+.btn-secondary-white:hover {
+  background: var(--blue-light);
+}
+
+@media (max-width: 900px) {
+  .calc-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

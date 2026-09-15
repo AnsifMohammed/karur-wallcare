@@ -1,0 +1,62 @@
+.floating-action-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 990;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.floating-buttons-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.float-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.2);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.float-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.28);
+}
+
+.float-btn-whatsapp {
+  background: #25d366;
+}
+
+.float-btn-call {
+  background: var(--primary-blue);
+}
+
+.float-btn-calc {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 640px) {
+  .floating-action-widget {
+    bottom: 16px;
+    right: 16px;
+  }
+  .float-label {
+    display: none;
+  }
+  .float-btn {
+    padding: 12px;
+    border-radius: 50%;
+  }
+}
