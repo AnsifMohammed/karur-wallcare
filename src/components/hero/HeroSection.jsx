@@ -6,6 +6,15 @@ import productsLineupImg from '../../assets/images/products-lineup.jpg';
 import './HeroSection.css';
 
 export default function HeroSection({ onOpenQuote }) {
+  const marqueeStats = [
+    { value: "100%", label: "Batch Quality Checks", subtext: "Pre-dispatch tested" },
+    { value: "Type I, II, III", label: "IS 15477 : 2019", subtext: "Strict BIS compliance" },
+    { value: "20 KG", label: "Pack Size", subtext: "Moisture-proof bags" },
+    { value: "Zero Sag", label: "Vertical Slip Resistance", subtext: "High initial grab" },
+    { value: "ZED Bronze", label: "MSME Sustainable", subtext: "Govt. of India certified" },
+    { value: "UDYAM", label: "TN-10-0056913", subtext: "Own Karur manufacturing" },
+  ];
+
   return (
     <section id="home" className="hero-section">
       <div className="hero-shape hero-shape-1"></div>
@@ -72,7 +81,7 @@ export default function HeroSection({ onOpenQuote }) {
               </div>
               <div>
                 <div className="cert-title">IS 15477 : 2019</div>
-                <div className="cert-sub">Type I & II Certified</div>
+                <div className="cert-sub">Type I, II & III Certified</div>
               </div>
             </div>
 
@@ -118,7 +127,7 @@ export default function HeroSection({ onOpenQuote }) {
               </div>
               <div className="float-feature-pill">
                 <CheckCircle2 size={16} className="text-emerald" />
-                <span>No Hacking of Surface Required</span>
+                <span>Zero Vertical Slip</span>
               </div>
               <div className="float-feature-pill">
                 <CheckCircle2 size={16} className="text-emerald" />
@@ -141,18 +150,34 @@ export default function HeroSection({ onOpenQuote }) {
         </div>
       </div>
 
-      {/* Numerical Stats Banner - Full Width Stretched */}
+      {/* Infinite Running Marquee Stats Bar - Stretched Full Width */}
       <div className="hero-stats-bar">
-        <div className="stats-container-fluid">
-          {COMPANY_INFO.stats.map((stat, idx) => (
-            <div key={idx} className="stat-box">
-              <div className="stat-number">{stat.value}</div>
-              <div className="stat-info">
-                <div className="stat-label">{stat.label}</div>
-                <div className="stat-sub">{stat.subtext}</div>
+        <div className="stats-marquee-track">
+          {/* Primary Track */}
+          <div className="stats-marquee-group">
+            {marqueeStats.map((stat, idx) => (
+              <div key={`track1-${idx}`} className="stat-box">
+                <div className="stat-number">{stat.value}</div>
+                <div className="stat-info">
+                  <div className="stat-label">{stat.label}</div>
+                  <div className="stat-sub">{stat.subtext}</div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Duplicate Track for Seamless Infinite Scrolling */}
+          <div className="stats-marquee-group" aria-hidden="true">
+            {marqueeStats.map((stat, idx) => (
+              <div key={`track2-${idx}`} className="stat-box">
+                <div className="stat-number">{stat.value}</div>
+                <div className="stat-info">
+                  <div className="stat-label">{stat.label}</div>
+                  <div className="stat-sub">{stat.subtext}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
