@@ -7,6 +7,7 @@ import AdhesiveCalculator from './components/calculator/AdhesiveCalculator';
 import ApplicationSteps from './components/guide/ApplicationSteps';
 import AboutSection from './components/about/AboutSection';
 import EnquirySection from './components/enquiry/EnquirySection';
+import LocationMapSection from './components/common/LocationMapSection';
 import Footer from './components/common/Footer';
 import FloatingContact from './components/common/FloatingContact';
 import QuoteModal from './components/enquiry/QuoteModal';
@@ -55,6 +56,9 @@ function App() {
 
         {/* Official Contact & Dealership Enquiry Form */}
         <EnquirySection />
+
+        {/* Plant & Office Location Map */}
+        <LocationMapSection />
       </main>
 
       {/* Site Footer */}

@@ -21,14 +21,14 @@ export default function HeroSection({ onOpenQuote }) {
             </span>
             <span className="hero-pill-badge">
               <span className="pill-dot"></span>
-              <span>100% Natural Sand • Own Karur Plant</span>
+              <span>IS 15477 : 2019 Certified • Own Karur Plant</span>
             </span>
           </div>
 
           {/* Main Headline */}
           <h1 className="hero-title">
-            Construction chemicals built on{' '}
-            <span className="hero-highlight">100% natural sand</span>
+            Next-Gen Polymer Tile Adhesives built for{' '}
+            <span className="hero-highlight">permanent bond strength</span>
           </h1>
 
           {/* Slogan */}
