@@ -317,7 +317,7 @@
   color: #ffffff;
 }
 
-/* Stats Bar - Full Width Stretched */
+/* Stats Bar - Centered 1440p Container */
 .hero-stats-bar {
   background: #ffffff;
   border-top: 1px solid var(--border-light);
@@ -328,19 +328,21 @@
 
 .stats-container-fluid {
   width: 100%;
-  max-width: 100%;
-  padding: 0 4rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  align-items: center;
 }
 
 .stat-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.25rem;
   border-right: 1px solid var(--border-light);
-  padding-right: 1.5rem;
+  padding: 0 1.25rem;
 }
 
 .stat-box:last-child {

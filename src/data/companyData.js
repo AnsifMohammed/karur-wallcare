@@ -46,7 +46,7 @@ export const COMPANY_INFO = {
   stats: [
     { label: "Natural River Sand", value: "100%", subtext: "Graded & kiln-dried" },
     { label: "Batch Quality Checks", value: "100%", subtext: "Pre-dispatch tested" },
-    { label: "IS 15477 Standard", value: "Type I & II", subtext: "Strict compliance" },
+    { label: "IS 15477 Standard", value: "Type I, II, III", subtext: "Full BIS compliance" },
     { label: "Pack Size", value: "20 KG", subtext: "Moisture-proof bags" },
   ]
 };
