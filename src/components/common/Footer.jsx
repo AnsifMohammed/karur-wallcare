@@ -146,7 +146,7 @@ export default function Footer({ onOpenQuote }) {
                 <div className="footer-prod-sub">IS 15477 Type II · Vitrified & Wet Areas · 20 kg</div>
               </div>
               <div className="footer-prod-item">
-                <div className="footer-prod-name">100% Natural River Sand</div>
+                <div className="footer-prod-name">Premium-Grade Aggregate</div>
                 <div className="footer-prod-sub">Kiln processed, washed & mechanical grade</div>
               </div>
             </div>

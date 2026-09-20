@@ -27,12 +27,12 @@ export default function SpecComparisonTable({ onOpenQuote }) {
       x2: "Zero Slip (Vitrified & Porcelain up to 4 sq.ft)",
       advantage: "Both prevent tile sagging on vertical surfaces"
     },
-    {
-      feature: "Sand Matrix",
-      x1: "100% Graded Natural River Sand",
-      x2: "100% Graded Natural River Sand",
-      advantage: "High compressive matrix, zero filler ash"
-    },
+    // {
+    //   feature: "Sand Matrix",
+    //   x1: "100% Graded Natural River Sand",
+    //   x2: "100% Graded Natural River Sand",
+    //   advantage: "High compressive matrix, zero filler ash"
+    // },
     {
       feature: "Tensile Adhesion Strength",
       x1: "≥ 1.00 N/mm² (Dry Condition)",

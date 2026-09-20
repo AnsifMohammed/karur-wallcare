@@ -23,8 +23,7 @@ export default function AboutSection({ onOpenQuote }) {
             </h2>
             <p className="about-lead">
               <strong>Karur Wallcare Industries Pvt. Ltd.</strong> was established with a singular objective: 
-              to manufacture dependable, scientific construction chemicals made strictly with 
-              <strong> 100% natural graded sand</strong> at an honest manufacturer-direct price.
+              to manufacture dependable, scientific construction chemicals at an honest manufacturer-direct price.
             </p>
             <p className="about-body">
               Too many contractors experience debonding tiles, hollow echoing sounds, and costly callbacks 

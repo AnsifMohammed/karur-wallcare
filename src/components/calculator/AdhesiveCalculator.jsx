@@ -237,7 +237,7 @@ export default function AdhesiveCalculator({ onOpenQuote }) {
               <div className="calc-guarantee-note">
                 <Check size={16} className="text-white" />
                 <span>
-                  Made with <strong>100% Graded Natural Sand</strong> for maximum mechanical grip and zero shrinkage hollows.
+                  Made with <strong>Premium Grade Materials</strong> for maximum mechanical grip and zero shrinkage hollows.
                 </span>
               </div>
 

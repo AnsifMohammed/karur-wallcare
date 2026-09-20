@@ -51,7 +51,7 @@ export default function HeroSection({ onOpenQuote }) {
           <p className="hero-description">
             <strong>Karur Wallcare Industries Pvt. Ltd.</strong> manufactures 
             <strong> K Tile Bond X1, X2, and X3</strong> polymer-modified tile adhesives 
-            conforming to <strong>IS 15477 : 2019</strong>. Engineered with 100% washed river sand for 
+            conforming to <strong>IS 15477 : 2019</strong>. Engineered with premium-grade raw materials for 
             zero vertical slip, durable bond strength, and no surface hacking needed.
           </p>
 
