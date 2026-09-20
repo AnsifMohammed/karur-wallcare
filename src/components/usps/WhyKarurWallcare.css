@@ -6,8 +6,11 @@
 
 .pillars-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(3, minmax(260px, 360px));
   gap: 1.75rem;
+  justify-items: center;
+  justify-content: center;
   margin-bottom: 4.5rem;
 }
 

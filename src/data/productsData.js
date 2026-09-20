@@ -10,10 +10,10 @@ export const PRODUCTS = [
     color: "Grey Powder",
     accentColor: "#f59e0b",
     summary: "Cement-based polymer-modified tile adhesive designed specifically for fixing ceramic and small vitrified tiles on interior walls and floors in dry environments.",
-    description: "Formulated with 100% graded natural sand, specialty polymers, and premium Portland cement. Offers excellent non-slip characteristics, smooth trowel glide, and dependable bond strength without water-curing needed.",
+    description: "Formulated with Premium-Grade Aggregate, specialty polymers, and premium Portland cement. Offers excellent non-slip characteristics, smooth trowel glide, and dependable bond strength without water-curing needed.",
     keyHighlights: [
       "Conforms strictly to IS 15477 : 2019 Type I standard",
-      "Manufactured with 100% natural graded sand for superior density",
+      "Manufactured with Premium-Grade Aggregate for superior density",
       "Non-sag formulation: prevents vertical tile slippage on walls",
       "Ready to mix with water — no cumbersome sand/cement mixing on site",
       "Economical cost per square foot for interior residential projects"
@@ -48,7 +48,7 @@ export const PRODUCTS = [
     color: "Grey Powder",
     accentColor: "#0284c7",
     summary: "Enhanced polymer-fortified adhesive engineered for fixing ceramic, gres, and vitrified tiles up to 4 sq.ft in both dry and wet interior walls and floors.",
-    description: "Features elevated polymer modification delivering superior flexural strength, moisture resistance, and mechanical grip. Built with 100% graded natural sand to resist thermal movement and dampness in bathrooms, kitchens, and high-footfall rooms.",
+    description: "Features elevated polymer modification delivering superior flexural strength, moisture resistance, and mechanical grip. Built with Premium Graded Sand to resist thermal movement and dampness in bathrooms, kitchens, and high-footfall rooms.",
     keyHighlights: [
       "Conforms strictly to IS 15477 : 2019 Type II standard",
       "Designed for vitrified & porcelain tiles up to 4 sq.ft (600mm x 600mm)",
@@ -125,9 +125,9 @@ export const CERTIFICATIONS = [
     tag: "Recognized Enterprise"
   },
   {
-    title: "100% Natural River Sand",
+    title: "Premium-Grade Aggregate",
     subtitle: "In-House Graded",
-    desc: "Kiln-processed and graded natural sand offering superior interlocking matrix compared to cheap quarry dust/filler.",
+    desc: "Kiln-processed and Premium Graded Sand offering superior interlocking matrix compared to cheap quarry dust/filler.",
     tag: "Core Material Advantage"
   }
 ];

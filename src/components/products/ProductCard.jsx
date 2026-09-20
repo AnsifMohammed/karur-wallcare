@@ -30,7 +30,7 @@ export default function ProductCard({ product, onSelectProduct, onOpenQuote }) {
             />
           </div>
           <div className="bag-sand-tag">
-            <span>100% Natural Sand</span>
+            <span>Premium Graded Sand</span>
           </div>
         </div>
 

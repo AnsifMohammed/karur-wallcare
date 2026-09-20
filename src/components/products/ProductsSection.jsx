@@ -16,7 +16,7 @@ export default function ProductsSection({ onOpenQuote }) {
           <span className="section-subtitle">Factory-Engineered Products</span>
           <h2>K Tile Bond Adhesive Range</h2>
           <p>
-            Batch-formulated in Karur with 100% graded natural sand, high-bond polymers, 
+            Batch-formulated in Karur with with premium-grade aggregates, high-bond polymers, 
             and zero filler quarry dust for long-lasting structural adhesion.
           </p>
 
@@ -63,11 +63,11 @@ export default function ProductsSection({ onOpenQuote }) {
               <Sparkles size={16} className="text-blue" />
               <span>Our Material Promise</span>
             </div>
-            <h3>Why 100% Natural River Sand Outperforms Quarry Powder</h3>
+            <h3>Why Premium-Grade Aggregate Outperforms Quarry Powder</h3>
             <p>
-              Many local adhesives replace natural sand with fine limestone or quarry crusher powder, 
+              Many local adhesives replace quality aggregate with fine limestone or quarry crusher powder, 
               causing shrink cracks and hollow sounds under tiles within months. 
-              <strong> Karur Wallcare uses exclusively washed, graded river sand</strong>, 
+              <strong> Karur Wallcare uses exclusively washed, graded aggregate</strong>, 
               providing superior structural matrix, high mechanical interlock, and uniform thickness control.
             </p>
             <div className="sand-benefits-row">

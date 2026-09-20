@@ -12,13 +12,13 @@ export default function WhyKarurWallcare() {
       desc: "Unlike brands that outsource packing, our dedicated automated manufacturing plant in Karur gives us complete batch-wise control over polymer blend, sand grading, and consistency.",
       tag: "Batch-Wise Control"
     },
-    {
-      icon: <Sparkles size={28} className="pillar-icon text-blue" />,
-      title: "100% Graded Natural Sand",
-      subtitle: "Zero Quarry Powder Fillers",
-      desc: "We exclusively use washed, graded natural river sand. Natural sand particles have natural angular interlocking that enhances shear bond strength and prevents hollow tile sound over time.",
-      tag: "Permanent Bond"
-    },
+    // {
+    //   icon: <Sparkles size={28} className="pillar-icon text-blue" />,
+    //   title: "100% Premium Graded Sand",
+    //   subtitle: "Zero Quarry Powder Fillers",
+    //   desc: "We exclusively use washed, Premium Graded Sand. Natural sand particles have natural angular interlocking that enhances shear bond strength and prevents hollow tile sound over time.",
+    //   tag: "Permanent Bond"
+    // },
     {
       icon: <CheckCheck size={28} className="pillar-icon text-blue" />,
       title: "Tested Tensile & Non-Slip",
@@ -43,7 +43,7 @@ export default function WhyKarurWallcare() {
           <span className="section-subtitle">The Karur Wallcare Advantage</span>
           <h2>Why Contractors & Dealers Choose K Tile Bond</h2>
           <p>
-            Manufactured with pride in Karur using 100% natural sand, delivering 
+            Manufactured with pride in Karur using using carefully graded sand, delivering 
             uncompromising bond strength for homes, commercial complexes, and modern architecture.
           </p>
         </div>
